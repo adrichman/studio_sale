@@ -1,0 +1,61 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*.container {
+	background-color: transparent;
+}
+.nav,
+.navbar-nav,
+.navbar,
+.navbar-inverse,
+.navbar-fixed-top,
+.navbar-header,
+.navbar-collapse {
+	background-image: none;
+	background-color: #000;
+}
+
+*/
+/*
+.the-story {
+	display:none;
+}
+*/
+/*body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}*/
+ {
+}
+
+article .h3{
+	display: block;
+    
+    
+	margin-bottom: 20px;
+	font-size: 24px;
+	text-align: right;
+}
+article .h3 a, h4 {
+  	text-decoration: none;
+  	letter-spacing: 1.2px;
+  	color: rgba(250, 238, 98, 0.8);
+  	text-shadow: #000 1px 1px;
+}
+footer, .copyright {
+	margin: auto 10px;
+	position: relative;
+	bottom: 0;
+	height: 50px;
+}
+article table {
+	display: inline-block;
+}
+
+
+
+
+
+
