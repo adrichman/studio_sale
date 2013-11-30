@@ -54,8 +54,9 @@ article table {
 	display: inline-block;
 }
 
-
-
+.content {
+	display: none;
+}
 
 
 
