@@ -93,9 +93,9 @@ article table {
 }
 
 .jcarousel img {
+    max-width: 100% !important;
+    height: auto;
     display: block;
-    max-width: 100%;
-    height: auto !important;
 }
 
 /** Carousel Controls **/
