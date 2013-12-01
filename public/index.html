@@ -13,11 +13,12 @@
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="/css/main.css">
-
-        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery.jcarousel.js"></script>
+        <script type="text/javascript" src="js/vendor/jcarousel.responsive.js"></script>
         <script type="text/javascript">
           $(document).ready(function(){
             $('.navbar-nav a').on('click', function(e){
@@ -50,11 +51,11 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="http://thebucketNYC.com/pics" target="_blank">The Studio</a></li>
-            <li><a href="#" id="nav-1">The Story</a></li>
-            <li><a href="#" id="nav-2">The Offers</a></li>
-            <li><a href="#" id="nav-3">The Gear</a></li>
-            <li><a href="#" id="nav-4">The Owner</a></li>
+            <li><a href="#" id="nav-1">The Studio</a></li>
+            <li><a href="#" id="nav-2">The Story</a></li>
+            <li><a href="#" id="nav-3">The Offers</a></li>
+            <li><a href="#" id="nav-4">The Gear</a></li>
+            <li><a href="#" id="nav-5">The Owner</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -71,6 +72,33 @@
       
   <section>
     <div class="container">
+      <div id="the-studio" class="content col-lg-10">
+        <article>  
+          <div id="pics">        
+              <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                  <ul>
+                    <li><img src="img/IMG_9627.JPG" alt="Image 4"></li>
+                    <li><img src="img/IMG_9613.JPG" alt="Image 1"></li>
+                    <li><img src="img/IMG_9659.JPG" alt="Image 3"></li>
+                    <li><img src="img/IMG_9667.JPG" alt="Image 3"></li>
+                    <li><img src="img/IMG_9669.JPG" alt="Image 3"></li>
+                    <li><img src="img/IMG_9624.JPG" alt="Image 3"></li> 
+                  </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                <p class="jcarousel-pagination"></p>
+            </div>
+          <h2>See More</h2>
+          <h4><a href="http://www.theBucketNYC.com" target="_blank">www.TheBucketNYC.com</a></h4>
+          </div>
+        <!-- </article> -->
+        <!-- <article> -->
+        </article>
+      </div>
       <div id="the-story" class="content the-story col-lg-10">
         <article>          
           <h2>The Story</h2>

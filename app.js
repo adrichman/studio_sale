@@ -1,5 +1,12 @@
 var connect = require('connect'),
-  app = connect.createServer(),
+  sass = require('node-sass'),
+  app = connect.createServer(
+  	sass.middleware({
+  		src: __dirname + '/public/css/scss',
+  		dest: __dirname + '/public/css',
+  		debug: true
+  	})
+  ),
   port = process.env.PORT || 4000;
 
 app.use(connect.static(__dirname + '/public'));
