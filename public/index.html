@@ -21,6 +21,8 @@
         <script type="text/javascript">
           $(document).ready(function(){
             $('.navbar-nav a').on('click', function(e){
+              Array.prototype.forEach.call($('.navbar-nav a'), function(x){return x.style.color = '';});
+              this.style.color = '#FFF';
               if (e.target.target != '_blank'){
                 e.preventDefault();
                 $('.content').hide();

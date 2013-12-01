@@ -58,6 +58,8 @@ article table {
 	display: none;
 	width: 83%;
 }
-
+.nav-active a {
+	color: #FFF;
+}
 
 
