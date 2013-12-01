@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="/css/main.css">
+        <!--[if lt IE 9]>
+          <script src="js/vendor/html5shiv.js"></script>
+        <![endif]-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
         <script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -21,14 +24,22 @@
         <script type="text/javascript" src="js/vendor/jcarousel.responsive.js"></script>
         <script type="text/javascript">
           $(document).ready(function(){
+            if (!('forEach' in Array.prototype)) {
+                Array.prototype.forEach= function(action, that /*opt*/) {
+                    for (var i= 0, n= this.length; i<n; i++)
+                        if (i in this)
+                            action.call(that, this[i], i, this);
+                };
+            }
             $('.navbar-nav a').on('click', function(e){
-              Array.prototype.forEach.call($('.navbar-nav a'), function(x){return x.style.color = '';});
-              this.style.color = '#FFF';
-              if (e.target.target != '_blank'){
-                e.preventDefault();
-                $('.content').hide();
-                $('.content')[e.target.id.match(/\d/) - 1].style.display = "inline-block";
-              }
+              Array.prototype.forEach.call($('.navbar-nav a'), function(x){return x.style.color = '';
+            });
+            this.style.color = '#FFF';
+            if (e.target.target != '_blank'){
+              e.preventDefault();
+              $('.content').hide();
+              $('.content')[e.target.id.match(/\d/) - 1].style.display = "inline-block";
+            }
             });
           });
         </script>
