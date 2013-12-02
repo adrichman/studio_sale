@@ -16,6 +16,8 @@ h4 {
   color: #faee62;
   color: rgba(250, 238, 98, 0.8);
   text-shadow: black 1px 1px; }
+  h4 a {
+    text-decoration: none; }
 
 footer, .copyright {
   margin: auto 10px;
