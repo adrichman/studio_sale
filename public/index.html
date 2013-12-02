@@ -48,6 +48,7 @@
             if (e.target.target != '_blank'){
               e.preventDefault();
               $('.content').hide();
+              $('#' + $(e.target).text().toLowerCase().replace(' ', '-')).fadeIn(600);
               $('.content')[e.target.id.match(/\d/) - 1].style.display = "inline-block";
             }
             });

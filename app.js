@@ -4,7 +4,7 @@ var connect = require('connect'),
   	sass.middleware({
   		src: __dirname + '/public/css/scss',
   		dest: __dirname + '/public/css',
-  		debug: true
+  		// debug: true
   	})
   ),
   port = process.env.PORT || 4000;
