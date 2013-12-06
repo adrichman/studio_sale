@@ -12,7 +12,7 @@ article .h3 {
 
 h4 {
   text-decoration: none;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
   color: #faee62;
   color: rgba(250, 238, 98, 0.8);
   text-shadow: black 1px 1px; }
@@ -42,7 +42,7 @@ article table {
     text-align: right;
     margin: 0; }
   #pics h4 {
-    margin: 0;
+    margin: 0 0 0 -20px;
     text-align: right; }
     #pics h4 a {
       text-decoration: none; }
@@ -124,8 +124,8 @@ article table {
   text-decoration: none;
   display: inline-block;
   font-size: 11px;
-  height: 10px;
-  width: 10px;
+  height: 7px;
+  width: 7px;
   line-height: 10px;
   background: white;
   color: #4e443c;
