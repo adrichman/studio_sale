@@ -41,6 +41,11 @@
               $('#nav-5')[0].click();
               }
             );
+            $(document).on("click", ".navbar-collapse.in", function(e) {
+                if ($(e.target).is("a") ) {
+                    $(this).collapse("hide");
+                }
+            });
             $('.navbar-nav a').on('click', function(e){
               Array.prototype.forEach.call($('.navbar-nav a'), function(x){return x.style.color = '';
             });
