@@ -28,6 +28,9 @@ footer, .copyright {
 article table {
   display: inline-block; }
 
+.jumbotron p a {
+  color: #441e30; }
+
 .content {
   display: none;
   width: 83%; }
